@@ -1,0 +1,10 @@
+{
+  "bands": {
+    "1": "gdd_mean",
+    "2": "hsd_mean",
+    "3": "frost_days_mean",
+    "4": "gdd_std",
+    "5": "hsd_std",
+    "6": "frost_days_std"
+  }
+}
