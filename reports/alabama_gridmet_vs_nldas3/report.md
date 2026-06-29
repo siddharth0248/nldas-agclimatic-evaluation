@@ -10,6 +10,11 @@
 - **GRIDMET data access**: Google Earth Engine.
 - **NLDAS-3 data access**: AWS S3.
 
+## monthly climatological cycle
+![FD_01](maps/cycle_frost_days.png)
+![GDD_01](maps/cycle_gdd.png)
+![HSD_01](maps/cycle_hsd.png)
+
 ## FROST_DAYS Mean Maps
 
 Representative monthly mean maps (Months Jan, April, July, Oct):
