@@ -5,7 +5,7 @@
 - **Growing Degree Days (GDD)**: calculated from daily mean temperature using base threshold **10 deg C**.
   Contribution per day is `max(((Tmax + Tmin)/2 - 10), 0)`. Monthly GDD is the sum of daily contributions.
 - **Heat Stress Days (HSD)**: count of days where **Tmax > 30 deg C**.
-- **Frost Days**: count of days where **Tmin < 0 deg C**.
+- **Frost-Free Days**: count of days where **Tmin > 0 deg C**. (Related indicator in this workflow is frost days with threshold **Tmin < 0 deg C**.)
 - **Climatology period**: **2016-2025** (10 years).
 - **GRIDMET data access**: Google Earth Engine.
 - **NLDAS-3 data access**: AWS S3.
