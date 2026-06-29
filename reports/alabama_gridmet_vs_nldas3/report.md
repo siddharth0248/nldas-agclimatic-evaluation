@@ -12,18 +12,18 @@
 
 ## FROST_DAYS Mean Maps
 
-Representative monthly mean maps (months 01, 04, 07, 10):
+Representative monthly mean maps (Months Jan, April, July, Oct):
 
-### Month 01
+### Month Jan
 ![frost_days_mean_01](maps/map_frost_days_mean_month_01.png)
 
-### Month 04
+### Month April
 ![frost_days_mean_04](maps/map_frost_days_mean_month_04.png)
 
-### Month 07
+### Month July
 ![frost_days_mean_07](maps/map_frost_days_mean_month_07.png)
 
-### Month 10
+### Month Oct
 ![frost_days_mean_10](maps/map_frost_days_mean_month_10.png)
 
 ## FROST_DAYS Distribution Plots
@@ -34,16 +34,16 @@ Representative monthly mean maps (months 01, 04, 07, 10):
 
 Representative monthly mean maps (months 01, 04, 07, 10):
 
-### Month 01
+### Month Jan
 ![gdd_mean_01](maps/map_gdd_mean_month_01.png)
 
-### Month 04
+### Month April
 ![gdd_mean_04](maps/map_gdd_mean_month_04.png)
 
-### Month 07
+### Month July
 ![gdd_mean_07](maps/map_gdd_mean_month_07.png)
 
-### Month 10
+### Month Oct
 ![gdd_mean_10](maps/map_gdd_mean_month_10.png)
 
 ## GDD Distribution Plots
@@ -54,16 +54,16 @@ Representative monthly mean maps (months 01, 04, 07, 10):
 
 Representative monthly mean maps (months 01, 04, 07, 10):
 
-### Month 01
+### Month Jan
 ![hsd_mean_01](maps/map_hsd_mean_month_01.png)
 
-### Month 04
+### Month April
 ![hsd_mean_04](maps/map_hsd_mean_month_04.png)
 
-### Month 07
+### Month July
 ![hsd_mean_07](maps/map_hsd_mean_month_07.png)
 
-### Month 10
+### Month Oct
 ![hsd_mean_10](maps/map_hsd_mean_month_10.png)
 
 ## HSD Distribution Plots
