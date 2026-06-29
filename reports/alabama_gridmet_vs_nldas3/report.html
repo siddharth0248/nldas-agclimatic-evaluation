@@ -3,22 +3,19 @@
 </head><body>
 <h1>Alabama GRIDMET vs NLDAS3 Comparison Report</h1>
 <br/>
-<p>This report was generated from county-level monthly climatology outputs.</p>
+<h2>Indicator Definitions and Method</h2>
 <br/>
-<h2>Correlation Summary</h2>
+<p>- **Growing Degree Days (GDD)**: calculated from daily mean temperature using base threshold **10 deg C**.</p>
+<p>  Contribution per day is `max(((Tmax + Tmin)/2 - 10), 0)`. Monthly GDD is the sum of daily contributions.</p>
+<p>- **Heat Stress Days (HSD)**: count of days where **Tmax > 30 deg C**.</p>
+<p>- **Frost-Free Days**: count of days where **Tmin > 0 deg C**. (Related indicator in this workflow is frost days with threshold **Tmin < 0 deg C**.)</p>
+<p>- **Climatology period**: **2016-2025** (10 years).</p>
+<p>- **GRIDMET data access**: Google Earth Engine.</p>
+<p>- **NLDAS-3 data access**: AWS S3.</p>
 <br/>
-<pre>| variable | stat | n_pairs | pearson_r | pearson_p | spearman_rho | spearman_p |
-| --- | --- | --- | --- | --- | --- | --- |
-| frost_days | mean | 804 | 0.9854493080908996 | 0.0 | 0.9770527216881627 | 0.0 |
-| frost_days | std | 804 | 0.9685398201181341 | 0.0 | 0.9724394477407075 | 0.0 |
-| gdd | mean | 804 | 0.9964499846476351 | 0.0 | 0.9964354261119392 | 0.0 |
-| gdd | std | 804 | 0.8087273197370157 | 4.909903516177681e-187 | 0.8061652782782097 | 5.791854865563331e-185 |
-| hsd | mean | 804 | 0.9857798837276889 | 0.0 | 0.9554726983544756 | 0.0 |
-| hsd | std | 804 | 0.9039555785028848 | 4.0472608824991285e-298 | 0.9086930078709649 | 1.6922871083912036e-306 |</pre>
+<h2>FROST_DAYS Mean Maps</h2>
 <br/>
-<h2>FROST_DAYS (mean)</h2>
-<br/>
-<p>Representative monthly maps:</p>
+<p>Representative monthly mean maps (months 01, 04, 07, 10):</p>
 <br/>
 <h3>Month 01</h3>
 <img alt='frost_days_mean_01' src='maps/map_frost_days_mean_month_01.png' />
@@ -32,25 +29,13 @@
 <h3>Month 10</h3>
 <img alt='frost_days_mean_10' src='maps/map_frost_days_mean_month_10.png' />
 <br/>
-<h2>FROST_DAYS (std)</h2>
+<h2>FROST_DAYS Distribution Plots</h2>
 <br/>
-<p>Representative monthly maps:</p>
+<img alt='distribution_frost_days' src='maps/distribution_frost_days.png' />
 <br/>
-<h3>Month 01</h3>
-<img alt='frost_days_std_01' src='maps/map_frost_days_std_month_01.png' />
+<h2>GDD Mean Maps</h2>
 <br/>
-<h3>Month 04</h3>
-<img alt='frost_days_std_04' src='maps/map_frost_days_std_month_04.png' />
-<br/>
-<h3>Month 07</h3>
-<img alt='frost_days_std_07' src='maps/map_frost_days_std_month_07.png' />
-<br/>
-<h3>Month 10</h3>
-<img alt='frost_days_std_10' src='maps/map_frost_days_std_month_10.png' />
-<br/>
-<h2>GDD (mean)</h2>
-<br/>
-<p>Representative monthly maps:</p>
+<p>Representative monthly mean maps (months 01, 04, 07, 10):</p>
 <br/>
 <h3>Month 01</h3>
 <img alt='gdd_mean_01' src='maps/map_gdd_mean_month_01.png' />
@@ -64,25 +49,13 @@
 <h3>Month 10</h3>
 <img alt='gdd_mean_10' src='maps/map_gdd_mean_month_10.png' />
 <br/>
-<h2>GDD (std)</h2>
+<h2>GDD Distribution Plots</h2>
 <br/>
-<p>Representative monthly maps:</p>
+<img alt='distribution_gdd' src='maps/distribution_gdd.png' />
 <br/>
-<h3>Month 01</h3>
-<img alt='gdd_std_01' src='maps/map_gdd_std_month_01.png' />
+<h2>HSD Mean Maps</h2>
 <br/>
-<h3>Month 04</h3>
-<img alt='gdd_std_04' src='maps/map_gdd_std_month_04.png' />
-<br/>
-<h3>Month 07</h3>
-<img alt='gdd_std_07' src='maps/map_gdd_std_month_07.png' />
-<br/>
-<h3>Month 10</h3>
-<img alt='gdd_std_10' src='maps/map_gdd_std_month_10.png' />
-<br/>
-<h2>HSD (mean)</h2>
-<br/>
-<p>Representative monthly maps:</p>
+<p>Representative monthly mean maps (months 01, 04, 07, 10):</p>
 <br/>
 <h3>Month 01</h3>
 <img alt='hsd_mean_01' src='maps/map_hsd_mean_month_01.png' />
@@ -96,25 +69,8 @@
 <h3>Month 10</h3>
 <img alt='hsd_mean_10' src='maps/map_hsd_mean_month_10.png' />
 <br/>
-<h2>HSD (std)</h2>
+<h2>HSD Distribution Plots</h2>
 <br/>
-<p>Representative monthly maps:</p>
-<br/>
-<h3>Month 01</h3>
-<img alt='hsd_std_01' src='maps/map_hsd_std_month_01.png' />
-<br/>
-<h3>Month 04</h3>
-<img alt='hsd_std_04' src='maps/map_hsd_std_month_04.png' />
-<br/>
-<h3>Month 07</h3>
-<img alt='hsd_std_07' src='maps/map_hsd_std_month_07.png' />
-<br/>
-<h3>Month 10</h3>
-<img alt='hsd_std_10' src='maps/map_hsd_std_month_10.png' />
-<br/>
-<h2>Output Files</h2>
-<br/>
-<p>- `maps/`: map PNGs for every month, variable, and stat</p>
-<p>- `tables/`: CSVs for county-month values and summaries</p>
+<img alt='distribution_hsd' src='maps/distribution_hsd.png' />
 <br/>
 </body></html>
